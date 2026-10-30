@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "aether-dimension",
+	"version": "${version}",
+	"name": "aether-dimension",
+	"description": "Aether Dimension - a test mod adding a simple Aether test dimension.",
+	"authors": [
+		"ltzcancio"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aether-dimension/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ltzcancio.aethertest.AetherDimension"
+		],
+		"client": [
+			"com.ltzcancio.aethertest.client.AetherDimensionClient"
+		],
+		"fabric-datagen": [
+			"com.ltzcancio.aethertest.datagen.AetherClientDataGenerator"
+		]
+	},
+	"mixins": [
+		"aether-dimension.mixins.json",
+		{
+			"config": "aether-dimension.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

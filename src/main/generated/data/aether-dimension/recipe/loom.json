@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:glow_ink_sac",
+    "M": "minecraft:phantom_membrane",
+    "P": "aether-dimension:prismarine_x_shard"
+  },
+  "pattern": [
+    "P  ",
+    " M ",
+    "  G"
+  ],
+  "result": {
+    "id": "aether-dimension:loom"
+  }
+}
